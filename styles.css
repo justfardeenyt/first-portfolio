@@ -39,12 +39,12 @@ nav > a, .contact-wrapper >a{
   font-family:Arial;
   color:cyan;
   height:100%;
-  width:65px;
+  width:100px;
   display:flex;
   justify-content:center;
   align-items:center;
   transition:0.5s ease-in-out;
-   
+  font-size:1.3rem;
 }
 nav > a:hover, .contact-wrapper >a:hover{
   background-color:cyan;
@@ -198,7 +198,7 @@ h2{
   grid-gap:20px;
   font-family: Arial,sans-serif;
   font-size:1.3rem;
-  
+  background:linear-gradient(90deg, #b2b232, black);
   color:white;
 }
 .ending1{
@@ -282,5 +282,6 @@ h2{
   }
 }
 /* Mobile View Nav Design End */
+
 
 
