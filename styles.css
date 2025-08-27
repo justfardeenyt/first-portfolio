@@ -198,7 +198,8 @@ h2{
   grid-gap:20px;
   font-family: Arial,sans-serif;
   font-size:1.3rem;
-  
+  background:linear-gradient(90deg, #b2b232, #b2b290;
+  color:white;
 }
 .ending1{
   grid-area:ending1;
@@ -209,7 +210,7 @@ h2{
   margin-right:20px;
   font-style:italic;
 }
-
+/* Animation Section Start */
 @keyframes spin{
   0%{
     background: conic-gradient(from 90deg at center, red, yellow, blue,green, red);
@@ -227,8 +228,8 @@ h2{
     background: conic-gradient(from 90deg at center, red, yellow, blue,green, red);
   }
 }
-
-/* Mobile View Nav Design */
+/* Animation Section End */
+/* Mobile View Nav Design Start */
 
 @media (max-width: 440px) {
   #navbar {
@@ -250,7 +251,6 @@ h2{
   right: 20px;
   cursor: pointer;
 }
-
   .hamburger {
     display: block;
     color:white;
@@ -280,6 +280,6 @@ h2{
   .menu-toggle:checked + .hamburger + #navbar>a, .contact-wrapper>a{
     height:30px;
   }
-
-  
 }
+/* Mobile View Nav Design End */
+
