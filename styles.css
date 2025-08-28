@@ -17,7 +17,7 @@ a{
 
 header{
   width:100%;
-  height:10vw;
+  height:6vw;
   display:flex;
   background-color:var(--primary-color);
   position:fixed;
@@ -198,7 +198,7 @@ h2{
   grid-gap:20px;
   font-family: Arial,sans-serif;
   font-size:1.3rem;
-  background:linear-gradient(90deg, #b2b232, black);
+  background:linear-gradient(blue, black);
   color:white;
 }
 .ending1{
@@ -282,6 +282,7 @@ h2{
   }
 }
 /* Mobile View Nav Design End */
+
 
 
 
