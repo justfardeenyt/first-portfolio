@@ -113,12 +113,14 @@ li>a:hover{
   display:flex;
   flex-direction:column;
   align-items:center;
+  
 }
 h2{
   color:white;
   border-bottom:2px solid white;
   padding:10px;
-  
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .project-tiles{
   display: flex;
@@ -132,22 +134,45 @@ h2{
   width:30%;
   height:30%;
   border:2px solid white;
+  border-radius: 10px;
+  overflow:hidden;
 }
 .project-thumbnail{
   width:100%;
   height:60%;
+  border-bottom: 3px solid var(--primary-color);
+  object-fit: cover;
 }
 .project-description{
   width:90%;
-  height: 25%;
+  height: 20%;
   border:2px solid white;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:5px;
+  padding:5px;
 }
 .project-link{
   width:15%;
-  height: 20%;
-  border:2px solid white;
+  height: 30px;
+  padding-top:5px;
+  background-color: greenyellow;
+  color: var(--primary-color);
   text-align:center;
   border-radius:5px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin:5px auto 10px auto;
+  transition: 0.5s ease-in-out;
+}
+.project-link:hover{
+  font-size: 1.2rem;
+}
+
+.project-cards .coming-soon.coming-soon {
+  display: none;
 }
 #view-more{
   width:95px;
@@ -168,21 +193,6 @@ h2{
   color:cyan;
   border:none;
 }
-#view-more::after {
-  content: "";
-  position: absolute;
-  top: -5px; left: 0; right: 0; bottom: 0;
-  padding: 4px; /* border thickness */
-  background: conic-gradient(from 90deg at center, red, yellow, blue,green);
-  border-radius: 8px;
-  z-index: -1;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: spin 0.85s ease-in-out infinite;
-}
 /* Project Section End*/
 /* Contact Section Start*/
 #Contact{
@@ -190,16 +200,17 @@ h2{
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  height:300px;
+  gap:20px;
+  height:350px;
   width:100%;
   padding:10px;
   background:#020228;
 }
-#Contact h2{
+.contact-header h2{
   border-bottom:none;
   font-size:2em;
 }
-#Contact p{
+.contact-header p{
   color:cyan;
   text-align:center;
   font-style:italic;
@@ -232,11 +243,13 @@ h2{
   grid-gap:20px;
   font-family: Arial,sans-serif;
   font-size:1.3rem;
-  
+  background: linear-gradient(180deg, rgb(13, 13, 50), black);
+  color:white;
 }
 .ending1{
   grid-area:ending1;
   font-weight:bold;
+  margin-left: 30px;
 }
 .ending2{
   grid-area:ending2;
@@ -244,23 +257,8 @@ h2{
   font-style:italic;
 }
 
-@keyframes spin{
-  0%{
-    background: conic-gradient(from 90deg at center, red, yellow, blue,green, red);
-  }
-  25%{
-    background: conic-gradient(from 90deg at center,green, red, yellow, blue, green);
-  }
-  50%{
-    background: conic-gradient(from 90deg at center,blue,green, red,yellow,blue);
-  }
-  75%{
-    background: conic-gradient(from 90deg at center, yellow, blue,geen, red,yellow);
-  }
-  100%{
-    background: conic-gradient(from 90deg at center, red, yellow, blue,green, red);
-  }
-}
+/* Animation Start */
+/* Animation End */
 
 /* Mobile View Nav Design */
 
@@ -314,6 +312,4 @@ h2{
   .menu-toggle:checked + .hamburger + #navbar>a, .contact-wrapper>a{
     height:30px;
   }
-
-  
 }
