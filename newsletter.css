@@ -1,0 +1,151 @@
+
+:root{
+    --primary-color:#1b1b32;
+    --secondary-color:white;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+/* NewsLetter Design Start */
+.newsletter-background{
+    background-color: rgba(128, 128, 128, 0.685);
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-main{
+    height:40%;
+    width:45%;
+    background-color: var(--secondary-color);
+    display: flex;
+    box-shadow: 0 0 15px 5px gray;
+}
+/* Email Section Start */
+.email-section{
+    width: 65%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--primary-color);
+    margin-top: 3rem;
+}
+.subheading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: gray;
+    margin-top: 0.6rem;
+}
+.description{
+    width:75%;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: var(--primary-color);
+    margin-top: 0.6rem;
+    text-align: center;
+}
+.email-catcher{
+    margin-top:1rem;
+    width: 70%;
+    height: 15%;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+}
+#email {
+    width:65%;
+    height: 100%;
+    border: none;
+    font-size: 1.1rem;
+    padding:5px;
+}
+#email:focus{
+    outline: none;
+}
+#submit{
+    width:35%;
+    height: 100%;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.final-message{
+    width:40%;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: gray;
+    margin-top: 0.6rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+/* Email Section End */
+.info-section{
+    width:35%;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+}
+/* Close Newsletter Icon */
+.close-newsletter{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* Image Section Start */
+.main-img{
+    width:35%;
+    height: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    position: relative;
+    top: 20%;
+    left: 35%;
+}
+.sub-img{
+    width: 30%;
+    height: 35%;
+    object-fit: cover;
+    box-shadow:-1px 1px 10px gray;
+}
+.sub-img.one{
+    position: absolute;
+    top:40%;
+    left: 25%;
+    transform: rotate(-15deg);
+}
+.sub-img.two{
+    position: absolute;
+    top:42%;
+    left: 35%;
+    transform: rotate(-5deg);
+}
+.sub-img.three{
+    position: absolute;
+    top:39%;
+    left: 45%;
+    transform: rotate(5deg);
+}
+.sub-img.four{
+    position: absolute;
+    top:42%;
+    left:55%;
+    transform: rotate(10deg);
+}
+
+/* Image Section End */
+/* NewsLetter Design End */
